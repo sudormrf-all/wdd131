@@ -1,41 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
 
-</html>
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Web Page</title>
-    <link rel="stylesheet" href="styles.css">
-    <script src="script.js" defer></script>
+    <title>WDD 131 – Dynamic Web Fundamentals – Your Name</title>
+    <meta name="description"
+        content="WDD 131 – Dynamic Web Fundamentals. Your Name. Home page, web development, HTML, CSS, JavaScript, BYU-Idaho.">
+    <meta name="author" content="Your Name">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/base.css">
+    <script src="scripts/getdates.js" defer></script>
 </head>
 
 <body>
     <header>
-        <h1>Welcome to My Web Page</h1>
+        <span id="course-title">WDD 131 – Dynamic Web Fundamentals</span>
+        <nav>
+            <a href="https://www.linkedin.com/in/your-profile" target="_blank" rel="noopener">LinkedIn</a>
+            <a href="https://byupw.instructure.com/" target="_blank" rel="noopener">Canvas</a>
+            <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/1-ne/3?lang=eng&id=p7#p7" target="_blank"
+                rel="noopener">Scripture</a>
+            <a href="#" target="_blank" rel="noopener">Final Project</a>
+        </nav>
     </header>
-    <nav>
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
     <main>
-        <section id="home">
-            <h2>Home Section</h2>
-            <p>This is the home section of the page.</p>
+        <h1>André Pina</h1>
+        <section class="card">
+            <img src="images/your-photo.jpg" alt="Your portrait">
+            <div>
+                <h2>About Me</h2>
+                <p>
+                    Hello! My name is Your Name. I am passionate about web development, technology, and lifelong
+                    learning. I enjoy exploring new frameworks and building interactive web experiences.
+                </p>
+            </div>
         </section>
-        <section id="about">
-            <h2>About Section</h2>
-            <p>This section contains information about the page.</p>
-        </section>
-        <section id="contact">
-            <h2>Contact Section</h2>
-            <p>Feel free to reach out through this section.</p>
+        <section class="card">
+            <img src="images/hobby.jpg" alt="A photo representing your hobby">
+            <div>
+                <h2>My Interests</h2>
+                <p>
+                    In my free time, I love hiking, reading, and working on coding projects. I believe in the power of
+                    creativity and am always eager to learn new skills and collaborate with others.
+                </p>
+            </div>
         </section>
     </main>
     <footer>
-        <p>&copy; 2025 My Web Page</p>
+        <p>
+            &copy; <span id="currentyear"></span> André Pina | Lisbon, Portugal 
+        </p>
+        <p id="lastModified"></p>
     </footer>
+</body>
+
+</html>

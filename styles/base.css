@@ -1,0 +1,168 @@
+/* Google Fonts import (if not using <link> in HTML) */
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap'); */
+
+:root {
+    --primary-color: #2a4365;
+    --secondary-color: #f7fafc;
+    --accent-color: #3182ce;
+    --card-bg: #fff;
+    --nav-hover-bg: #e2e8f0;
+    --text-color: #222;
+    --footer-bg: #2d3748;
+    --footer-text: #f7fafc;
+    --border-radius: 8px;
+    --max-width: 900px;
+    --font-main: 'Roboto', Arial, sans-serif;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-main);
+    background: var(--secondary-color);
+    color: var(--text-color);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background: var(--primary-color);
+    color: var(--secondary-color);
+    padding: 2rem 0 1rem 0;
+    text-align: center;
+}
+
+#course-title {
+    display: block;
+    font-size: 1.7rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    letter-spacing: 1px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+nav a {
+    color: var(--secondary-color);
+    text-decoration: none;
+    padding: 0.5rem 1.2rem;
+    border-radius: var(--border-radius);
+    transition: background 0.2s, color 0.2s;
+    font-weight: 500;
+}
+
+nav a:hover,
+nav a:focus {
+    background: var(--nav-hover-bg);
+    color: var(--primary-color);
+    outline: none;
+}
+
+main {
+    max-width: var(--max-width);
+    margin: 2rem auto;
+    padding: 1rem;
+    background: var(--card-bg);
+    border-radius: var(--border-radius);
+    box-shadow: 0 2px 8px rgba(44, 62, 80, 0.08);
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2.2rem;
+    margin-bottom: 2rem;
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+.card {
+    background: var(--secondary-color);
+    border-radius: var(--border-radius);
+    box-shadow: 0 1px 4px rgba(44, 62, 80, 0.10);
+    padding: 1.5rem;
+    display: grid;
+    grid-template-columns: 120px 1fr;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+.card img {
+    width: 100%;
+    max-width: 120px;
+    border-radius: var(--border-radius);
+    object-fit: cover;
+    box-shadow: 0 1px 4px rgba(44, 62, 80, 0.12);
+}
+
+.card h2 {
+    margin: 0 0 0.5rem 0;
+    font-size: 1.3rem;
+    color: var(--accent-color);
+}
+
+.card p {
+    margin: 0;
+    font-size: 1rem;
+    color: var(--text-color);
+}
+
+footer {
+    background: var(--footer-bg);
+    color: var(--footer-text);
+    padding: 1.5rem 0 1rem 0;
+    text-align: center;
+    margin-top: auto;
+}
+
+footer p {
+    margin: 0.3rem 0;
+    font-size: 1rem;
+}
+
+#currentyear {
+    font-weight: 700;
+    margin: 0 0.2em;
+}
+
+#lastModified {
+    font-size: 0.95rem;
+    color: #cbd5e1;
+}
+
+/* Responsive Design */
+@media (min-width: 700px) {
+    main {
+        grid-template-columns: 1fr;
+    }
+
+    .card {
+        grid-template-columns: 150px 1fr;
+        gap: 2rem;
+    }
+}
+
+@media (min-width: 900px) {
+    main {
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+    }
+
+    h1 {
+        grid-column: 1 / -1;
+    }
+}
