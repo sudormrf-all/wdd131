@@ -1,0 +1,90 @@
+/* Reset and base styles */
+body,
+html {
+    height: 100%;
+    margin: 0;
+    font-family: 'Georgia', serif;
+}
+
+body {
+    display: grid;
+    grid-template-areas:
+        "header header"
+        "main aside"
+        "footer footer";
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+}
+
+/* Grid area assignments */
+header {
+    grid-area: header;
+    background: #393939;
+    color: #fff;
+    padding: 1.5rem 1rem 0.5rem 1rem;
+}
+
+nav {
+    margin-top: 1rem;
+}
+
+main {
+    grid-area: main;
+    background: #ccc;
+    padding: 1.5rem 1rem;
+    font-size: 1.5rem;
+}
+
+aside {
+    grid-area: aside;
+    background: #fff;
+    padding: 1.5rem 1rem;
+    font-size: 1.5rem;
+}
+
+footer {
+    grid-area: footer;
+    background: #393939;
+    color: #fff;
+    text-align: center;
+    padding: 2rem 1rem;
+    font-size: 1.5rem;
+}
+
+/* Flexbox navigation menu */
+.nav-menu {
+    display: flex;
+    justify-content: space-around;
+    background: #000;
+    padding: 0.5rem 0;
+    list-style: none;
+    margin: 0;
+}
+
+.nav-menu li {
+    margin: 0 1rem;
+}
+
+.nav-menu a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 800px) {
+    body {
+        grid-template-areas:
+            "header"
+            "main"
+            "aside"
+            "footer";
+        grid-template-columns: 1fr;
+        grid-template-rows: auto 1fr auto auto;
+    }
+
+    aside {
+        border-top: 1px solid #ddd;
+    }
+}
