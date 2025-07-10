@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portugal</title>
+    <link rel="stylesheet" href="styles/place.css">
+    <script src="scripts/place.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Portugal</h1>
+    </header>
+    <main>
+        <section class="hero">
+            <picture>
+                <source srcset="images/hero-desktop.webp" media="(min-width: 768px)" type="image/webp">
+                <img src="images/hero-mobile.webp" alt="Lisbon cityscape and Portuguese coast" />
+            </picture>
+        </section>
+        <section class="info">
+            <div class="data-card">
+                <h2>Data</h2>
+                <ul>
+                    <li><strong>Area:</strong> 92,212 sq km</li>
+                    <li><strong>Population:</strong> 10,352,042</li>
+                    <li><strong>Capital:</strong> Lisbon</li>
+                    <li><strong>Languages:</strong> Portuguese</li>
+                    <li><strong>Currency:</strong> Euro (€)</li>
+                    <li><strong>Time Zone:</strong> UTC+0 (WET), UTC+1 (WEST in summer)</li>
+                    <li><strong>Calling Code:</strong> +351</li>
+                    <li><strong>Internet TLD:</strong> .pt</li>
+                </ul>
+            </div>
+            <div class="weather-card">
+                <h2 class="weather-heading">
+                    Weather
+                    <span class="weather-icon-mobile">
+                        <!-- Inline SVG for mobile weather icon -->
+                        <svg width="24" height="24" viewBox="0 0 24 24" aria-label="Partly Cloudy">
+                            <circle cx="8" cy="12" r="5" fill="#b0c4de" />
+                            <circle cx="16" cy="9" r="4" fill="#ffe066" />
+                        </svg>
+                    </span>
+                </h2>
+                <ul>
+                    <li><strong>Temperature:</strong> <span id="temp">9</span>°C</li>
+                    <li><strong>Conditions:</strong> Partly Cloudy</li>
+                    <li><strong>Wind:</strong> <span id="wind">10</span> km/h</li>
+                    <li><strong>Wind Chill:</strong> <span id="windchill">N/A</span>°C</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>
+            &copy; <span id="currentYear"></span> André Pina | Lisbon, Portugal<br>
+            Last Modification: <span id="lastModified"></span>
+        </p>
+    </footer>
+</body>
+
+</html>

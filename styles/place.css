@@ -1,0 +1,144 @@
+:root {
+    --primary: #006600;
+    /* Portuguese flag green */
+    --secondary: #ff0000;
+    /* Portuguese flag red */
+    --white: #fff;
+    --text: #222;
+    --card-bg: rgba(255, 255, 255, 0.94);
+    --accent: #ffe066;
+    /* Yellow accent */
+    --spacing: 1rem;
+    --radius: 0.75rem;
+    --shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: var(--white);
+    color: var(--text);
+}
+
+header {
+    background: var(--primary);
+    color: var(--white);
+    text-align: center;
+    padding: var(--spacing) 0;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: var(--secondary);
+    min-height: 100vh;
+}
+
+.hero {
+    width: 100%;
+    max-width: 900px;
+    margin: var(--spacing) 0;
+}
+
+.hero img {
+    width: 100%;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    display: block;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing);
+    width: 100%;
+    max-width: 900px;
+    align-items: stretch;
+    justify-content: center;
+    margin-bottom: var(--spacing);
+}
+
+.data-card,
+.weather-card {
+    background: var(--card-bg);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    padding: var(--spacing);
+}
+
+.data-card h2,
+.weather-card h2 {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    font-size: 1.3rem;
+    color: var(--primary);
+}
+
+.data-card ul,
+.weather-card ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.data-card li,
+.weather-card li {
+    margin-bottom: 0.4rem;
+}
+
+.weather-heading {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.weather-icon-mobile {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+footer {
+    background: var(--primary);
+    color: var(--white);
+    text-align: center;
+    padding: 1rem 0 0.5rem 0;
+    font-size: 1rem;
+    margin-top: auto;
+}
+
+/* Desktop Styles */
+@media (min-width: 768px) {
+    main {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .info {
+        flex-direction: row;
+        gap: 2rem;
+        justify-content: center;
+    }
+
+    .data-card,
+    .weather-card {
+        width: 350px;
+        min-width: 300px;
+    }
+
+    /* Hide SVG on desktop, show emoticon via pseudo-element */
+    .weather-icon-mobile {
+        display: none;
+    }
+
+    .weather-heading::after {
+        content: "⛅";
+        margin-left: 0.5rem;
+        font-size: 1.5rem;
+        vertical-align: middle;
+    }
+}
