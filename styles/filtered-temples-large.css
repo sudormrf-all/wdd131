@@ -1,0 +1,20 @@
+.gallery {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+}
+
+figure {
+    min-height: 350px;
+    display: flex;
+    flex-direction: column;
+}
+
+img {
+    flex-shrink: 0;
+    height: 180px;
+}
+
+figure p,
+figcaption {
+    flex-grow: 1;
+}

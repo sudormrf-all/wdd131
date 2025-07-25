@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FitCity Swimming Club</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <header>
+        <h1>FitCity Swimming Club</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#schedule">Schedule</a></li>
+                <li><a href="#coaches">Coaches</a></li>
+                <li><a href="#register">Register</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="about">
+            <h2>About Us</h2>
+            <p>Welcome to FitCity Swimming Club! We provide classes for beginners to advanced swimmers in a fun,
+                supportive environment.</p>
+            <img src="https://source.unsplash.com/800x400/?swimming" alt="Swimming Pool">
+        </section>
+
+        <section id="schedule">
+            <h2>Class Schedule</h2>
+            <ul>
+                <li>Mon–Fri: 7 AM – 9 AM (Beginners)</li>
+                <li>Mon–Fri: 5 PM – 7 PM (Intermediate)</li>
+                <li>Sat: 10 AM – 12 PM (Advanced)</li>
+            </ul>
+        </section>
+
+        <section id="coaches">
+            <h2>Meet the Coaches</h2>
+            <div class="coach">
+                <img src="https://source.unsplash.com/200x200/?coach" alt="Coach John" />
+                <p><strong>Coach John:</strong> Former national swimmer with 10 years of experience training youth
+                    athletes.</p>
+            </div>
+            <div class="coach">
+                <img src="https://source.unsplash.com/200x200/?female-swimming-coach" alt="Coach Sarah" />
+                <p><strong>Coach Sarah:</strong> Certified instructor specializing in beginner and children’s swimming
+                    programs.</p>
+            </div>
+        </section>
+
+        <section id="register">
+            <h2>Join the Club</h2>
+            <form id="registrationForm">
+                <input type="text" name="name" placeholder="Full Name" required />
+                <input type="email" name="email" placeholder="Email Address" required />
+                <select name="level">
+                    <option value="beginner">Beginner</option>
+                    <option value="intermediate">Intermediate</option>
+                    <option value="advanced">Advanced</option>
+                </select>
+                <button type="submit">Register</button>
+            </form>
+            <p id="message"></p>
+        </section>
+
+        <section id="gallery">
+            <h2>Gallery</h2>
+            <div class="gallery">
+                <img src="https://source.unsplash.com/300x200/?swim" alt="Swim Photo 1" />
+                <img src="https://source.unsplash.com/301x200/?pool" alt="Swim Photo 2" />
+                <img src="https://source.unsplash.com/302x200/?swimmer" alt="Swim Photo 3" />
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 FitCity Swimming Club</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
