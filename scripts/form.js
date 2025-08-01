@@ -8,10 +8,10 @@ const products = [
 
 document.addEventListener("DOMContentLoaded", () => {
     const select = document.getElementById("productName");
-    products.forEach(product => {
+    products.forEach((product) => {
         const option = document.createElement("option");
-        option.value = product.id;
-        option.textContent = product.name;
+        option.value = product.id; // product id used as value
+        option.textContent = product.name; // product name for display
         select.appendChild(option);
     });
 });

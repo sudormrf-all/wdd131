@@ -42,8 +42,8 @@ textarea {
     color: #003366;
 }
 
-input[type="checkbox"],
-input[type="radio"] {
+input[type='checkbox'],
+input[type='radio'] {
     width: auto;
     margin-right: 0.3rem;
     display: inline-block;
@@ -64,7 +64,7 @@ fieldset {
     margin-right: 0.25rem;
 }
 
-input[type="radio"]:checked+label {
+input[type='radio']:checked+label {
     color: #335c99;
     /* darker blue on selection */
 }
@@ -76,7 +76,7 @@ input[type="radio"]:checked+label {
     font-size: 0.95em;
 }
 
-input[type="submit"] {
+input[type='submit'] {
     background-color: #3366cc;
     /* medium blue button */
     color: #fff;
@@ -89,7 +89,7 @@ input[type="submit"] {
     border-radius: 4px;
 }
 
-input[type="submit"]:hover {
+input[type='submit']:hover {
     background: #254a99;
     /* darker blue hover */
 }

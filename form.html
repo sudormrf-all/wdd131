@@ -1,58 +1,82 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Product Review</title>
-    <link rel="stylesheet" href="styles/form.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Review Form</title>
+    <meta name="description" content="Submit your product reviews using our easy-to-use form." />
+    <meta name="author" content="Jose Oliveira" />
+    <link rel="stylesheet" href="styles/form.css" />
+    <script src="scripts/form.js" defer></script>
 </head>
 
 <body>
     <main>
         <h1>Product Review</h1>
         <form method="get" action="review.html" id="reviewForm">
+            <!-- Product Name Select -->
             <label for="productName">Product Name</label>
             <select id="productName" name="productName" required>
                 <option value="" disabled selected>Choose a Product ...</option>
                 <!-- JavaScript will populate options -->
             </select>
+
+            <!-- Overall Rating Radios -->
             <fieldset>
                 <legend>Overall Rating</legend>
                 <div class="star-rating">
-                    <input type="radio" id="star1" name="rating" value="1" required><label for="star1">☆</label>
-                    <input type="radio" id="star2" name="rating" value="2"><label for="star2">☆☆</label>
-                    <input type="radio" id="star3" name="rating" value="3"><label for="star3">☆☆☆</label>
-                    <input type="radio" id="star4" name="rating" value="4"><label for="star4">☆☆☆☆</label>
-                    <input type="radio" id="star5" name="rating" value="5"><label for="star5">☆☆☆☆☆</label>
+                    <input type="radio" id="star1" name="rating" value="1" required />
+                    <label for="star1">☆</label>
+                    <input type="radio" id="star2" name="rating" value="2" />
+                    <label for="star2">☆☆</label>
+                    <input type="radio" id="star3" name="rating" value="3" />
+                    <label for="star3">☆☆☆</label>
+                    <input type="radio" id="star4" name="rating" value="4" />
+                    <label for="star4">☆☆☆☆</label>
+                    <input type="radio" id="star5" name="rating" value="5" />
+                    <label for="star5">☆☆☆☆☆</label>
                 </div>
             </fieldset>
+
+            <!-- Date of Installation -->
             <label for="installDate">Date of Installation</label>
-            <input type="date" id="installDate" name="installDate" required>
+            <input type="date" id="installDate" name="installDate" required />
+
+            <!-- Useful Features Checkboxes -->
             <fieldset>
-                <legend>Which features did you find useful?<br>(Check all that apply)</legend>
-                <input type="checkbox" id="durability" name="features" value="Durability"><label
-                    for="durability">Durability</label><br>
-                <input type="checkbox" id="easeofuse" name="features" value="Ease of Use"><label for="easeofuse">Ease of
-                    Use</label><br>
-                <input type="checkbox" id="performance" name="features" value="Performance"><label
-                    for="performance">Performance</label><br>
-                <input type="checkbox" id="design" name="features" value="Design"><label for="design">Design</label>
+                <legend>Which features did you find useful?<br />(Check all that apply)</legend>
+
+                <input type="checkbox" id="durability" name="features" value="Durability" />
+                <label for="durability">Durability</label><br />
+
+                <input type="checkbox" id="easeofuse" name="features" value="Ease of Use" />
+                <label for="easeofuse">Ease of Use</label><br />
+
+                <input type="checkbox" id="performance" name="features" value="Performance" />
+                <label for="performance">Performance</label><br />
+
+                <input type="checkbox" id="design" name="features" value="Design" />
+                <label for="design">Design</label>
             </fieldset>
+
+            <!-- Written Review -->
             <label for="writtenReview">Written Review <span class="optional">(Optional)</span></label>
             <textarea id="writtenReview" name="writtenReview" rows="4"></textarea>
+
+            <!-- User Name -->
             <label for="username">Your Name <span class="optional">(Optional)</span></label>
-            <input type="text" id="username" name="username">
-            <input type="submit" value="Post Review">
+            <input type="text" id="username" name="username" />
+
+            <!-- Submit Button -->
+            <input type="submit" value="Post Review" />
         </form>
     </main>
+
     <footer>
-        <!-- Space left for new name -->
-        <p>&nbsp;<br>
-            @2025 | André Pina | Portugal <br>
+        <p>André Pina<br />
             Last Modification: 08/01/2025 23:00:00</p>
     </footer>
-    <script src="js/form.js"></script>
 </body>
 
 </html>
