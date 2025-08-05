@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="FitCity Swimming Club - Stay Healthy and Active with Our Swimming Programs" />
+    <title>FitCity Swimming Club - Home</title>
+
+    <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700&display=swap"
+        rel="stylesheet" />
+
+    <meta name="theme-color" content="#0D6EFD" />
+</head>
+
+<body>
+    <header role="banner" class="site-header">
+        <div class="container header-flex">
+            <a href="index.html" class="logo-link" aria-label="FitCity Swimming Club Home">
+                <img src="images/logo.png" alt="FitCity Swimming Club logo" class="site-logo" width="56" height="56" />
+            </a>
+            <h1 class="site-title">FitCity Swimming Club</h1>
+            <nav role="navigation" aria-label="Primary Navigation" class="main-nav">
+                <ul class="nav-list" role="menubar">
+                    <li role="none"><a role="menuitem" href="index.html" class="active" aria-current="page">Home</a>
+                    </li>
+                    <li role="none"><a role="menuitem" href="coaches.html">Coaches</a></li>
+                    <li role="none"><a role="menuitem" href="registration.html">Join Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main-content" tabindex="-1" class="container">
+        <section class="intro" aria-labelledby="welcome-title">
+            <h2 id="welcome-title" class="section-title">Welcome to FitCity</h2>
+            <p class="lead">
+                Dive into a dynamic swimming community built for all ages and skill levels. Improve your health, learn
+                new skills, and have fun with us.
+            </p>
+        </section>
+
+        <section class="events" aria-labelledby="events-title">
+            <h2 id="events-title" class="section-title">Upcoming Events</h2>
+            <article class="event-card" tabindex="0" aria-label="Summer Swim Gala Event details">
+                <h3 class="event-title">Summer Swim Gala</h3>
+                <p><time datetime="2025-08-15">August 15, 2025</time></p>
+                <figure>
+                    <img src="images/swimming-event.jpg" alt="Swimmers racing in the pool" loading="lazy" width="600"
+                        height="400" decoding="async" />
+                    <figcaption>Participants competing at last year's Summer Swim Gala.</figcaption>
+                </figure>
+            </article>
+        </section>
+
+        <section class="schedule" aria-labelledby="schedule-title">
+            <h2 id="schedule-title" class="section-title">Class Schedules</h2>
+            <ul class="schedule-list">
+                <li><strong>Beginner Swim:</strong> Mondays &amp; Wednesdays, 6–7 PM</li>
+                <li><strong>Advanced Swim:</strong> Tuesdays &amp; Thursdays, 7–8 PM</li>
+                <li><strong>Family Swim:</strong> Saturdays, 10–11 AM</li>
+            </ul>
+        </section>
+
+        <section id="member-count" aria-live="polite" aria-atomic="true" class="member-stats" role="status"
+            tabindex="0">
+            <!-- JavaScript inserts member count here -->
+        </section>
+    </main>
+
+    <footer role="contentinfo" class="site-footer">
+        <div class="container">
+            <p>&copy; 2025 FitCity Swimming Club</p>
+        </div>
+    </footer>
+
+    <script src="scritps/script.js" defer></script>
+</body>
+
+</html>
